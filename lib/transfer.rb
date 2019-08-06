@@ -18,7 +18,7 @@ class Transfer
             return
         end
         if @amount > @sender.balance
-            return "Transaction rejected. Please check your account balance."            
+            return "Transaction rejected. Please check your account balance."
         end
         @sender.balance = @sender.balance - @amount
         @receiver.balance += @amount
